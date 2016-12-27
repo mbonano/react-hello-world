@@ -1,0 +1,21 @@
+publish:
+
+  asset:
+    repo_url: <s3_bucket_url>
+
+  image:
+    repo_url: 066396987149.dkr.ecr.us-east-1.amazonaws.com
+    repo_name: rco-integration-repository
+
+promote:
+
+  stages:
+
+    dev:
+      cluster_name: rco-integrations-DEV
+
+    qa:
+      cluster_name: rco-integrations-QA
+
+    prod:
+      cluster_name: rco-integrations-PROD

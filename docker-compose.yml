@@ -1,0 +1,6 @@
+version: '2'
+services:
+  app:
+    image: "$image_name"
+    ports:
+      - "9010:8080"
